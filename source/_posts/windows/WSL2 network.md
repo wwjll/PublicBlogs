@@ -1,3 +1,7 @@
+---
+categories:
+  - windows
+---
 #### Global proxy setting
 
 System running on wslw like Ubuntu is connected to Windows virtually , Window is netting its IP address.Other computer won't know the actual ip of the wsl2.
@@ -49,10 +53,6 @@ google-chrome-stable --no-sandbox --proxy-server="socks5://182.168.1.100:10810"
 
 2. I don't know why it will fails each time wsl2 restart , so you might need SwitchOmega plugin for fast proxy setup.Use ipconfig /all to get vEhternet(WSL) and use in proxy setting.
 
-<<<<<<< HEAD:windows/WSL2 network.md
-=======
-
->>>>>>> e814ab7f27f2d9cc9c6d899adf7f9d4108168f39:Blog/windows/WSL2 network.md
 #### Visual Adapter to link both
 
 1.Make sure system is win11 professional or even more advanced and Hyper-v features is turned on.
@@ -80,8 +80,6 @@ rename-vmswitch
 sudo ip addr del $(ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | head -n 1) dev eth0
 sudo ip addr add 192.168.1.150/24 broadcast 192.168.1.132 dev eth0
 sudo ip route add 0.0.0.0/0 via 192.168.1.1 dev eth0
-<<<<<<< HEAD:windows/WSL2 network.md
-=======
 
 ```
 
@@ -93,4 +91,3 @@ google-chrome --no-sandbox --proxy-server="socks5://192.168.1.132:10802"
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Connect-VMNetworkAdapter -VMNetworkAdapterName "vEthernet(WSL)" -SwitchName "WSLSwitch"
->>>>>>> e814ab7f27f2d9cc9c6d899adf7f9d4108168f39:Blog/windows/WSL2 network.md

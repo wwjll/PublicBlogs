@@ -7,15 +7,16 @@ title: Hexo
 subtitle: ""
 description: ""
 keywords:
-author: John Doe
+author: wwjll
 language: en
 timezone: "Etc/GMT+8"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://wwjll.github.io/PublicBlogs
-root: /PublicBlogs
+url: https://wwjll.github.io/
+root: /
 permalink: /:year/:month/:day/:title/
+# permalink: :year/:month/:hash.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -41,7 +42,12 @@ external_link:
   exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+
+# Static source
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 highlight:
@@ -100,6 +106,13 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 theme: fluid
+
+# Generate categories from directory-tree
+# Dependencies: https://github.com/xu-song/hexo-auto-category
+# depth: the max_depth of directory-tree you want to generate, should > 0
+auto_category:
+  enable: true
+  depth:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

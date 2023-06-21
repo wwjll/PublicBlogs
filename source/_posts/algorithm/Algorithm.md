@@ -1,3 +1,8 @@
+---
+title: 时间复杂度和空间复杂度
+categories:
+  - algorithm
+---
 
 from： https://zhuanlan.zhihu.com/p/50479555
 
@@ -18,6 +23,7 @@ for(i=1; i<=n; ++i)     // f(n) = 1
 
 
 * 常见复杂度算法
+  
 ```
 // O(1) 没有循环等结构， 复杂度不随某个变量而变化
 int i = 1;

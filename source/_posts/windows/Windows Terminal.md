@@ -1,3 +1,7 @@
+---
+categories:
+  - windows
+---
 #### Windows PowerShell
 
 Enhance terminal

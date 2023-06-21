@@ -1,3 +1,8 @@
+---
+title: Move wsl to desired position
+categories:
+  - windows
+---
 
 
 Using https://github.com/pxlrbt/move-wsl.git

@@ -1,3 +1,8 @@
+---
+title: Use GUI in WSL2
+categories:
+  - windows
+---
 1.Using XRDP and xfce4
 
 In wsl

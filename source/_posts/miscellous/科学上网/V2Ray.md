@@ -1,3 +1,9 @@
+---
+title: v2ray 科学上网
+categories:
+  - miscellous
+  - 科学上网
+---
 
 
 ### 项目 git 地址：
